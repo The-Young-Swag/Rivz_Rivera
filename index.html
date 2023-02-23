@@ -11,12 +11,27 @@
         <div class="logo">
           <img src="images/name_transparent.png">
         </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="https://www.lovethispic.com/uploaded_images/130778-You-Are-My-Favorite.jpg">Favorites</a></li>
-          </ul>
-        </div>
+	<div class="nav-links">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><button type="button" class="btn" onclick="openPopUp()">Favorites</button></li>
+		</ul>
+	</div>
+
+	<div class="popUp" id="popUp">
+		<img src="images/pngegg.png" alt="Pop-up image">
+		<h2>YOU ARE MY FAVORITE!!!</h2>
+		<p>and... I also like</p>
+		<p>•The Office</p>
+		<p>•DARK</p>
+		<p>•Naruto</p>
+		<p>•Attack On Titan</p>
+		<p>•Jujutsu Kaisen</p>
+		<p>•Assassination Classroom </p>
+		<p>and many more!</p>
+		<button type="button" onclick="closePopUp()">CUTE</button>
+	</div>
+
       </nav>
       <div class="information">
         <div class="overlay"></div>
@@ -117,16 +132,17 @@
 		</script>
 		
 		<script>
-			let popUp = document.getElementById("popUp");
-			
-			function openPopUp(){
+			const popUp = document.getElementById("popUp");
+
+			function openPopUp() {
 			popUp.classList.add("open-popUp");
 			}
-			
-			function closePopUp(){
+
+			function closePopUp() {
 			popUp.classList.remove("open-popUp");
 			}
-			
+
 		</script>
+
 	</body>
 </html>
