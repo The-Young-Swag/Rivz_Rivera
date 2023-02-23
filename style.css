@@ -120,7 +120,6 @@ nav {
   left: 27%;
   transform: translateY(-50%);
   z-index: 1;
-  border-radius: 10px;
 }
 
 .controls {
@@ -291,11 +290,8 @@ a {
   left: 36.5px;
   transform: translateY(-50%);
   z-index: 1;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-
-	
 
 .logo img {
   width: 120px;
