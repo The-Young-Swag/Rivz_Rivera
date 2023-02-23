@@ -251,6 +251,7 @@ a {
   font-size: 38px;
   font-weight: 500;
   margin: 10px 0 30px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .popUp p {
@@ -258,6 +259,7 @@ a {
 	font-weight: 500;
 	margin: 1px 0 10px;
 	text-align: left;
+	text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .popUp button {
@@ -274,7 +276,7 @@ a {
   cursor: pointer;
   font-weight: bold;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
 @media screen and (max-width:600px)
 {
