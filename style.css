@@ -275,14 +275,19 @@ a {
   width: 50px;
   height: 50px;
 	}
-	
-	.mobile {
+
+.mobile {
   width: 200px;
   position: absolute;
   top: 50%;
   left: 36.5px;
   transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
+
+
+	
 
 .logo img {
   width: 120px;
@@ -309,6 +314,8 @@ a {
 
 .feature img {
   width: 70px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+  border-radius:50px;
 }
 
 .feature {
@@ -319,10 +326,12 @@ a {
 
 .feature div {
   margin-left: 30px;
+  text-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
 }
 
 .feature div p {
   margin-top: 8px;
+  
 }
 
 .one {
@@ -354,19 +363,13 @@ a {
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  text-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
 }
 
-.typeAuto h1 {
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 0px;
-  position: absolute;
-  top: 27%;
-  left: 3%;
-  background: linear-gradient(to right, #1f99d0 ,#f178b5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.controls h3{
+	text-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
+
 
 .container h1 {
   position: absolute;
@@ -377,10 +380,11 @@ a {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 0px;
-  background: linear-gradient(to right, #526bca,#1f99d0 ,#c63f7b);
+  background: transparent;
   padding: 5px 5px;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .quotes {
@@ -389,12 +393,31 @@ a {
   left: 15%;
   font-size: 12px;
   font-weight: bold;
+  background: transparent;
+  padding: 5px 5px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .quotes h2 {
   font-size: 15px;
   margin-top: 10px;
+  margin-bottom: 5px;
   font-weight: bold;
+}
+
+.typeAuto {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  bottom: 27%;
+  left: 3%;
+  color: white;
+  z-index: 2;
+  position: absolute;
+visibility: hidden;
 }
  
  #popUp {
@@ -416,4 +439,6 @@ a {
 
 }
 
-	
+	@media screen and (max-width: 900px) and (min-width: 600px){
+		
+	}
