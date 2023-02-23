@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xplizit NM7</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <img src="images/name_transparent.png">
+        </div>
+	<div class="nav-links">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><button type="button" class="btn" onclick="openPopUp()">Favorites</button></li>
+		</ul>
+	</div>
+
+	<div class="popUp" id="popUp">
+		<img src="images/pngegg.png" alt="Pop-up image">
+		<h2>YOU ARE MY FAVORITE!!!</h2>
+		<p>and... I also like</p>
+		<p>•The Office</p>
+		<p>•DARK</p>
+		<p>•Naruto</p>
+		<p>•Attack On Titan</p>
+		<p>•Jujutsu Kaisen</p>
+		<p>•Assassination Classroom </p>
+		<p>and many more!</p>
+		<button type="button" onclick="closePopUp()">CUTE</button>
+	</div>
+
+      </nav>
+      <div class="information">
+        <div class="overlay"></div>
+        <img src="images/Me(enhanced).png" class="mobile">
+        <div id="circle">
+          <div class="feature one">
+            <img src="images/OPENSEA.png">
+            <div>
+              <h1>OpenSea</h1>
+              <a href="https://opensea.io/Xplizit_NM7">•Xplizit_NM7</a>
+            </div>
+          </div>
+          <div class="feature two">
+            <img src="images/INSTAGRAM.png">
+            <div>
+              <h1>Instagram</h1>
+              <a href="https://www.instagram.com/the_young_swag/">•@The_Young_Swag</a>
+            </div>
+          </div>
+          <div class="feature three">
+            <img src="images/PINTEREST.png">
+            <div>
+              <h1>Pinterest</h1>
+              <a href="https://www.pinterest.ph/The_Young_Swag/rivz-rivera/">•@The_Young_Swag</a>
+            </div>
+          </div>
+          <div class="feature four">
+            <img src="images/YOUTUBE.png">
+            <div>
+              <h1>Youtube</h1>
+              <a href="https://www.youtube.com/channel/UCia-8zlPnGvDtRTTEdmUw_Q">•Xplizit NM7</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <img src="images/arrow.png" id="upBtn">
+        <h3>Social Media</h3>
+        <img src="images/arrow.png" id="downBtn">
+      </div>
+      <div class="container">
+        <h1 id="current-time"></h1>
+        <div class="quotes">
+          <p>TODAY'S QUOTE:</p>
+          <h2>"That Move You're Afraid To Make Might Just Be The One."</h2>
+        </div>
+		</div>
+		
+		<div class="typeAuto">
+
+			<h1>I'm <span class="auto-type"> </span></h1></div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		
+		<script>
+          var typed = new Typed(".auto-type",{
+				strings: ["","Coding","Eating","Sleeping","In Love","Busy","Rivz Rivera"], 
+				typeSpeed: 150,
+				backSpeed: 150,
+				loop: true
+			})
+		</script>
+
+		
+		
+		<script>
+			var circle = document.getElementById("circle");
+			var upBtn = document.getElementById("upBtn");
+			var downBtn = document.getElementById("downBtn");
+			
+			var rotateValue = circle.style.transform;
+			var rotateSum;
+			
+			upBtn.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(-90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+			
+			downBtn.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+		</script>
+		
+		<script>
+		let time = document.getElementById("current-time");
+		
+		setInterval(() =>{
+			let d = new Date();
+			time.innerHTML = d.toLocaleTimeString();
+		
+		},1000)
+		
+		</script>
+		
+		<script>
+			const popUp = document.getElementById("popUp");
+
+			function openPopUp() {
+			popUp.classList.add("open-popUp");
+			}
+
+			function closePopUp() {
+			popUp.classList.remove("open-popUp");
+			}
+
+		</script>
+
+	</body>
+</html>
