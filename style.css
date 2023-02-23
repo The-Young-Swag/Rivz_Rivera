@@ -74,15 +74,12 @@ nav {
 
 .feature img {
   width: 70px;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
-  border-radius:50px;
 }
 
 .feature {
   position: absolute;
   display: flex;
   color: #fff;
-  text-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .feature div {
@@ -159,7 +156,6 @@ nav {
   height: 0;
   border: 500px solid #fff;
   border-right-color: transparent;
-  z-index: 1;
 }
 
 a {
